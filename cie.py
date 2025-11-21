@@ -5,9 +5,9 @@ if len(sys.argv) != 2:
     ta=float(sys.argv[2])
     da=float(sys.argv[3])
 else:
-    hra = 0.20 * basic_salary
-    ta = 0.10 * basic_salary
-    da = 0.18 * basic_salary  
+    hra = "100" 
+    ta = "30"
+    da ="20"
     
 gross_salary = basic_salary + hra + ta + da    
 
