@@ -1,22 +1,26 @@
 import sys
 
-if len(sys.argv) != 3:
-    print("Usage: python script.py <basic_salary> <hra>")
+
+if len(sys.argv) != 2:
+    print("Usage: python script.py <basic_salary>")
     sys.exit(1)
+
 
 try:
-
     basic_salary = float(sys.argv[1])
-    hra = float(sys.argv[2])
 except ValueError:
-    print("Error: Both basic salary and HRA must be numbers.")
+    print("Error: Basic salary must be a number.")
     sys.exit(1)
 
+hra = 0.20 * basic_salary
+ta = 0.10 * basic_salary
+da = 0.18 * basic_salary
 
-if basic_salary < 0 or hra < 0:
-    print("Error: Salary and HRA must be non-negative numbers.")
-else:
-    total_salary = basic_salary + hra
-    print(f"Basic Salary: {basic_salary}")
-    print(f"HRA: {hra}")
-    print(f"Total Salary: {total_salary}")
+gross_salary = basic_salary + hra + ta + da
+
+
+print(f"Basic Salary: {basic_salary}")
+print(f"HRA: {hra}")
+print(f"TA: {ta}")
+print(f"DA: {da}")
+print(f"Gross Salary: {gross_salary}")
