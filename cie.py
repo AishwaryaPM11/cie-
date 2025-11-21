@@ -3,9 +3,9 @@ import sys
 if len(sys.argv) != 2:
     print("Usage: python script.py <basic_salary>")
 else:
-    HRA=float(sys.argv[1])
-    TA=float(sys.argv[2])
-    DA=float(sys.argv[3])
+    hra=float(sys.argv[1])
+    ta=float(sys.argv[2])
+    da=float(sys.argv[3])
  
 
     basic_salary = float(sys.argv[1])
@@ -16,8 +16,8 @@ else:
 
     gross_salary = basic_salary + hra + ta + da    
 
-    print(f"Basic Salary: {basic_salary}")
-    print(f"HRA: {hra}")
-    print(f"TA: {ta}")
-    print(f"DA: {da}")
-    print(f"Gross Salary: {gross_salary}")
+    print("Basic Salary: {basic_salary}")
+    print("HRA: {hra}")
+    print("TA: {ta}")
+    print("DA: {da}")
+    print("Gross Salary: {gross_salary}")
