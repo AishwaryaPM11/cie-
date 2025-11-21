@@ -20,4 +20,4 @@ else:
     print("HRA: {hra}")
     print("TA: {ta}")
     print("DA: {da}")
-    print("Gross Salary: {gross_salary}")
+    print("Gross Salary: {gross salary}")
