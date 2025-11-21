@@ -1,9 +1,9 @@
 import sys
 
-if len(sys.argv) != 2:
+if len(sys.argv) != 4:
      hra=float(sys.argv[1])
-    ta=float(sys.argv[2])
-    da=float(sys.argv[3])
+     ta=float(sys.argv[2])
+     da=float(sys.argv[3])
 else:
     hra = "100" 
     ta = "30"
@@ -11,7 +11,6 @@ else:
     
 gross_salary = basic_salary + hra + ta + da    
 
-print("Basic Salary: {basic_salary}")
 print("HRA: {hra}")
 print("TA: {ta}")
 print("DA: {da}")
